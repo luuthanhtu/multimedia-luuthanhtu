@@ -15,486 +15,22 @@
 
 <button onclick="draw()">Begin Animation</button>
 
-<canvas id="myCanvas" width="900" height="500"
+<canvas id="myCanvas" width="1500" height="900"
 style="border:1px solid #d3d3d3;"></canvas>
 
  <input type="button" id="clear" value="Clear">
 <script>
 
- window.addEventListener('load', drawdot, false);
+
 
 
 
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
-
-function drawdot() {
-ctx.beginPath();
-ctx.strokeStyle="black";
-ctx.arc(77,160,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(107,160,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(147,160,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(187,160,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(227,160,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(267,160,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(307,160,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(307,180,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(347,180,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(387,180,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(387,200,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(427,200,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(437,220,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(457,240,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(477,260,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(497,280,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(517,300,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.arc(517,320,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.arc(517,340,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(497,360,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath()
-ctx.arc(477,380,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.arc(427,380,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.arc(387,380,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.arc(387,380,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.arc(387,400,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.arc(347,400,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.arc(307,400,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.arc(307,380,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.arc(267,380,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.arc(227,380,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.arc(187,380,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.arc(147,380,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.arc(107,380,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(107,400,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-
-ctx.arc(67,400,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.arc(87,400,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.arc(47,400,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(47,360,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(27,340,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
+var a = Math.floor(Math.random() * 70) + 1;
+var b = Math.floor(Math.random() * 30) + 1;
 
 
-ctx.beginPath();
-ctx.arc(7,320,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(7,280,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(27,240,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(27,220,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(47,200,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(67,180,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(107,360,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(67,360,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(367,240,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(407,240,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(357,290,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(357,250,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(377,290,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(377,310,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(387,360,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.arc(347,360,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-
-//
-ctx.beginPath();
-ctx.fillStyle = "pink";
-ctx.arc(387,380,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle = "pink";
-ctx.arc(347,380,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle = "pink";
-ctx.arc(307,380,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle = "pink";
-ctx.arc(307,360,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle = "pink"
-ctx.arc(107,380,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle = "pink";
-ctx.arc(87,380,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.fillStyle = "pink"
-ctx.arc(67,380,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.fillStyle = "pink";
-ctx.arc(87,380,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.fillStyle = "pink";
-ctx.arc(47,360,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.fillStyle = "pink";
-ctx.arc(497,350,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.stroke();
-ctx.beginPath();
-ctx.fillStyle = "pink"
-ctx.arc(497,320,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.fillStyle = "pink"
-ctx.arc(377,290,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.fillStyle = "pink";
-ctx.arc(377,270,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.fillStyle = "pink";
-ctx.arc(377,250,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.fillStyle = "pink";
-ctx.arc(407,250,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle = "black";
-ctx.arc(417,290,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-
-
-ctx.beginPath();
-ctx.fillStyle = "black";
-ctx.arc(417,330,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle = "black";
-ctx.arc(457,290,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle = "black";
-ctx.arc(457,330,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(267,200,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(347,200,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(307,180,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(267,180,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(247,220,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(347,220,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(227,230,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(327,230,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(227,290,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(327,290,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(227,290,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(287,290,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(207,290,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(207,370,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(287,370,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(447,240,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(467,260,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(447,240,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(487,280,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-ctx.beginPath();
-ctx.fillStyle="rgb(102, 51, 10";
-ctx.arc(507,300,5,0,2*Math.PI);
-ctx.fill();
-ctx.stroke();
-}
 
 
 	var gradient = ctx.createLinearGradient(0, 0, 170, 0);
@@ -504,82 +40,548 @@ gradient.addColorStop("1.0", "red");
 
 function draw() {
 
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.strokeStyle = gradient;ctx.moveTo(67,160);ctx.lineTo(307,160);ctx.stroke(); }, 1000);
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.strokeStyle = gradient;ctx.moveTo(307,180);ctx.lineTo(387,180);ctx.stroke(); }, 2000);
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.strokeStyle = gradient;ctx.moveTo(387,200);ctx.lineTo(427,200);ctx.stroke(); }, 3000);
+  ctx.beginPath();
+  ctx.strokeStyle="black";
+  ctx.arc(77 + a,160 + b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(107 + a,160 + b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(147 + a,160 + b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(187 + a,160 +b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(227+a,160+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(267+a,160+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(307+a,160+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(307+a,180+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(347+a,180+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(387+a,180+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(387+a,200+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(427+a,200+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(437+a,220+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(457+a,240+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(477+a,260+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(497+a,280+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(517+a,300+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(517+a,320+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(517+a,340+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(497+a,360+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath()
+  ctx.arc(477+a,380+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(427+a,380+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(387+a,380+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(387+a,380+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(387+a,400+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(347+a,400+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(307+a,400+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(307+a,380+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(267+a,380+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(227+a,380+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(187+a,380+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(147+a,380+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(107+a,380+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
 
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(437,210);ctx.lineTo(437,230);ctx.stroke(); }, 4000);
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(457,230);ctx.lineTo(457,250);ctx.stroke(); }, 5000);
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(477,250);ctx.lineTo(477,270);ctx.stroke(); }, 6000);
+  ctx.beginPath();
+  ctx.arc(107+a,400+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
 
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(497,270);ctx.lineTo(497,290);ctx.stroke(); }, 7000);
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(517,290);ctx.lineTo(517,350);ctx.stroke(); }, 8000);
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(497,350);ctx.lineTo(497,370);ctx.stroke(); }, 9000);
+  ctx.arc(67+a,400+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(87+a,400+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(47+a,400+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
 
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(487,380);ctx.lineTo(387,380);ctx.stroke(); }, 10000);
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(387,400);ctx.lineTo(307,400);ctx.stroke(); }, 11000);
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(307,380);ctx.lineTo(107,380);ctx.stroke(); }, 12000);
+  ctx.beginPath();
+  ctx.arc(47+a,360+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
 
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(107,400);ctx.lineTo(47,400);ctx.stroke(); }, 13000);
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(47,390);ctx.lineTo(47,350);ctx.stroke(); }, 14000);
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(27,350);ctx.lineTo(27,330);ctx.stroke(); }, 15000);
+  ctx.beginPath();
+  ctx.arc(27+a,340+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
 
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(7,330);ctx.lineTo(7,250);ctx.stroke(); }, 16000);
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(27,250);ctx.lineTo(27,210);ctx.stroke(); }, 17000);
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(47,210);ctx.lineTo(47,190);ctx.stroke(); }, 18000);
+
+  ctx.beginPath();
+  ctx.arc(7+a,320+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(7+a,280+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(27+a,240+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(27+a,220+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(47+a,200+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(67+a,180+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(107+a,360+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(67+a,360+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(367+a,240+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(407+a,240+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(357+a,290+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(357+a,250+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(377+a,290+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(377+a,310+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(387+a,360+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(347+a,360+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+
+  //
+  ctx.beginPath();
+  ctx.fillStyle = "pink";
+  ctx.arc(387+a,380+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle = "pink";
+  ctx.arc(347+a,380+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle = "pink";
+  ctx.arc(307+a,380+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle = "pink";
+  ctx.arc(307+a,360+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle = "pink"
+  ctx.arc(107+a,380+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle = "pink";
+  ctx.arc(87+a,380+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.fillStyle = "pink"
+  ctx.arc(67+a,380+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.fillStyle = "pink";
+  ctx.arc(87+a,380+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.fillStyle = "pink";
+  ctx.arc(47+a,360+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.fillStyle = "pink";
+  ctx.arc(497+a,350+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.fillStyle = "pink"
+  ctx.arc(497+a,320+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.fillStyle = "pink"
+  ctx.arc(377+a,290+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.fillStyle = "pink";
+  ctx.arc(377+a,270+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.fillStyle = "pink";
+  ctx.arc(377+a,250+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.fillStyle = "pink";
+  ctx.arc(407+a,250+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle = "black";
+  ctx.arc(417+a,290+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+
+
+  ctx.beginPath();
+  ctx.fillStyle = "black";
+  ctx.arc(417+a,330+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle = "black";
+  ctx.arc(457+a,290+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle = "black";
+  ctx.arc(457+a,330+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(267+a,200+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(347+a,200+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(307+a,180+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(267+a,180+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(247+a,220+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(347+a,220+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(227+a,230+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(327+a,230+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(227+a,290+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10)";
+  ctx.arc(327+a,290+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(227+a,290+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(287+a,290+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(207+a,290+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(207+a,370+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(287+a,370+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(447+a,240+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(467+a,260+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(447+a,240+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(487+a,280+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.fillStyle="rgb(102, 51, 10";
+  ctx.arc(507+a,300+b,5,0,2*Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.strokeStyle = gradient;ctx.moveTo(67+a,160+b);ctx.lineTo(307+a,160+b);ctx.stroke(); }, 1000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.strokeStyle = gradient;ctx.moveTo(307+a,180+b);ctx.lineTo(387+a,180+b);ctx.stroke(); }, 2000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.strokeStyle = gradient;ctx.moveTo(387+a,200+b);ctx.lineTo(427+a,200+b);ctx.stroke(); }, 3000);
+
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(437+a,210+b);ctx.lineTo(437+a,230+b);ctx.stroke(); }, 4000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(457+a,230+b);ctx.lineTo(457+a,250+b);ctx.stroke(); }, 5000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(477+a,250+b);ctx.lineTo(477+a,270+b);ctx.stroke(); }, 6000);
+
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(497+a,270+b);ctx.lineTo(497+a,290+b);ctx.stroke(); }, 7000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(517+a,290+b);ctx.lineTo(517+a,350+b);ctx.stroke(); }, 8000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(497+a,350+b);ctx.lineTo(497+a,370+b);ctx.stroke(); }, 9000);
+
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(487+a,380+b);ctx.lineTo(387+a,380+b);ctx.stroke(); }, 10000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(387+a,400+b);ctx.lineTo(307+a,400+b);ctx.stroke(); }, 11000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(307+a,380+b);ctx.lineTo(107+a,380+b);ctx.stroke(); }, 12000);
+
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(107+a,400+b);ctx.lineTo(47+a,400+b);ctx.stroke(); }, 13000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(47+a,390+b);ctx.lineTo(47+a,350+b);ctx.stroke(); }, 14000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(27+a,350+b);ctx.lineTo(27+a,330+b);ctx.stroke(); }, 15000);
+
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(7+a,330+b);ctx.lineTo(7+a,250+b);ctx.stroke(); }, 16000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(27+a,250+b);ctx.lineTo(27+a,210+b);ctx.stroke(); }, 17000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(47+a,210+b);ctx.lineTo(47+a,190+b);ctx.stroke(); }, 18000);
 //
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(67,190);ctx.lineTo(67,170);ctx.stroke(); }, 19000);
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(67,360);ctx.lineTo(107,360);ctx.stroke(); }, 20000);
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(367,240);ctx.lineTo(407,240);ctx.stroke(); }, 21000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(67+a,190+b);ctx.lineTo(67+a,170+b);ctx.stroke(); }, 19000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(67+a,360+b);ctx.lineTo(107+a,360+b);ctx.stroke(); }, 20000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(367+a,240+b);ctx.lineTo(407+a,240+b);ctx.stroke(); }, 21000);
 
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(357,290);ctx.lineTo(357,250);ctx.stroke(); }, 22000);
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(377,290);ctx.lineTo(377,310);ctx.stroke(); }, 23000);
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(307,360);ctx.lineTo(287,360);ctx.stroke(); }, 24000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(357+a,290+b);ctx.lineTo(357+a,250+b);ctx.stroke(); }, 22000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(377+a,290+b);ctx.lineTo(377+a,310+b);ctx.stroke(); }, 23000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(307+a,360+b);ctx.lineTo(287+a,360+b);ctx.stroke(); }, 24000);
 
-  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(387,360);ctx.lineTo(327,360);;ctx.stroke(); }, 25000);
+  setTimeout(function(){ ctx.lineWidth = 20;ctx.moveTo(387+a,360+b);ctx.lineTo(327+a,360+b);;ctx.stroke(); }, 25000);
 
 
   //draw right leg
 
-  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(252, 149, 225";ctx.moveTo(387,380);ctx.lineTo(307,380);ctx.stroke(); }, 28000);
+  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(252, 149, 225";ctx.moveTo(387+a,380+b);ctx.lineTo(307+a,380+b);ctx.stroke(); }, 28000);
 
-  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(252, 149, 225";ctx.moveTo(327,360);ctx.lineTo(307,360);ctx.stroke(); }, 29000);
+  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(252, 149, 225";ctx.moveTo(327+a,360+b);ctx.lineTo(307+a,360+b);ctx.stroke(); }, 29000);
 
   //draw left leg
 
-  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(252, 149, 225";ctx.moveTo(107,380);ctx.lineTo(47,380);ctx.stroke(); }, 30000);
+  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(252, 149, 225";ctx.moveTo(107+a,380+b);ctx.lineTo(47+a,380+b);ctx.stroke(); }, 30000);
 
-  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(252, 149, 225";ctx.moveTo(67,360);ctx.lineTo(47,360);ctx.stroke(); }, 31000);
+  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(252, 149, 225";ctx.moveTo(67+a,360+b);ctx.lineTo(47+a,360+b);ctx.stroke(); }, 31000);
 
   //draw nose
 
-  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(252, 149, 225";ctx.moveTo(497,350);ctx.lineTo(497,310);ctx.stroke(); }, 32000);
+  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(252, 149, 225";ctx.moveTo(497+a,350+b);ctx.lineTo(497+a,310+b);ctx.stroke(); }, 32000);
 
-  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(252, 149, 225";ctx.moveTo(377,290);ctx.lineTo(377,250);ctx.stroke(); }, 33000);
+  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(252, 149, 225";ctx.moveTo(377+a,290+b);ctx.lineTo(377+a,250+b);ctx.stroke(); }, 33000);
 
-  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(252, 149, 225";ctx.moveTo(387,260);ctx.lineTo(407,260);ctx.stroke(); }, 33000);
+  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(252, 149, 225";ctx.moveTo(387+a,260+b);ctx.lineTo(407+a,260+b);ctx.stroke(); }, 33000);
 
   //draweye
 
-  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="black";ctx.arc(437,310,20,4,4*Math.PI);ctx.stroke(); }, 34000);
+  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="black";ctx.arc(437+a,310+b,20,4,4*Math.PI);ctx.stroke(); }, 34000);
 
-  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(102, 51, 10";ctx.moveTo(267,200);ctx.lineTo(367,200);ctx.stroke(); }, 35000);
+  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(102, 51, 10";ctx.moveTo(267+a,200+b);ctx.lineTo(367+a,200+b);ctx.stroke(); }, 35000);
 
-  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(102, 51, 10";ctx.moveTo(267,180);ctx.lineTo(307,180);ctx.stroke(); }, 36000);
+  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(102, 51, 10";ctx.moveTo(267+a,180+b);ctx.lineTo(307+a,180+b);ctx.stroke(); }, 36000);
   //
-  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(102, 51, 10";ctx.moveTo(247,220);ctx.lineTo(347,220);ctx.stroke(); }, 37000);
+  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(102, 51, 10";ctx.moveTo(247+a,220+b);ctx.lineTo(347+a,220+b);ctx.stroke(); }, 37000);
   //
-  setTimeout(function(){ ctx.beginPath();ctx.fillStyle = "rgb(102, 51, 10)";ctx.fillRect(227, 230, 100, 60);ctx.stroke(); }, 38000);
+  setTimeout(function(){ ctx.beginPath();ctx.fillStyle = "rgb(102, 51, 10)";ctx.fillRect(227+a, 230+b, 100, 60);ctx.stroke(); }, 38000);
   //
-  setTimeout(function(){ ctx.beginPath();ctx.fillStyle = "rgb(102, 51, 10)";ctx.fillRect(207, 290, 100, 80);ctx.stroke(); }, 38000);
+  setTimeout(function(){ ctx.beginPath();ctx.fillStyle = "rgb(102, 51, 10)";ctx.fillRect(207+a, 290+b, 100, 80);ctx.stroke(); }, 38000);
 
-  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(102, 51, 10";ctx.moveTo(437,230);ctx.lineTo(437,250);ctx.stroke(); }, 39000);
+  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(102, 51, 10";ctx.moveTo(437+a,230+b);ctx.lineTo(437+a,250+b);ctx.stroke(); }, 39000);
 
-  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(102, 51, 10";ctx.moveTo(457,250);ctx.lineTo(457,270);ctx.stroke(); }, 40000);
+  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(102, 51, 10";ctx.moveTo(457+a,250+b);ctx.lineTo(457+a,270+b);ctx.stroke(); }, 40000);
 
-  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(102, 51, 10";		ctx.moveTo(477,270);ctx.lineTo(477,290);ctx.stroke(); }, 41000);
+  setTimeout(function(){ ctx.beginPath();ctx.strokeStyle="rgb(102, 51, 10";		ctx.moveTo(477+a,270+b);ctx.lineTo(477+a,290+b);ctx.stroke(); }, 41000);
 
-  setTimeout(function(){ ctx.beginPath();ctx.moveTo(497,290);ctx.lineTo(497,310);ctx.stroke(); }, 42000);
+  setTimeout(function(){ ctx.beginPath();ctx.moveTo(497+a,290+b);ctx.lineTo(497+a,310+b);ctx.stroke(); }, 42000);
 
 }
 
